@@ -17,7 +17,7 @@ Hướng dẫn này gồm các phần sau (sẽ update dần).
 Giúp bạn bắt đầu với Python. Sau đó bạn có thể học sâu hơn tùy thích.
 
 ### Cơ bản
- 
+
 1. [Cài đặt Python](basics/install-python.md)
 2. [Bắt đầu với Python](basics/getting-started.md)
 3. [Các loại biến và so sánh](basics/variables.md)
