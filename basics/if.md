@@ -276,4 +276,4 @@ Ket qua la: 2500
 
 Bạn có thể tham khảo về print để làm cho thuận tiện hơn ở [đây](functions.md#print)
 
-Đáp án ở [đây](answers.md#if-else-elif).
+Đáp án ở [đây](answer.md#if-else-elif).
