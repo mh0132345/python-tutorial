@@ -223,7 +223,7 @@ else:
 
 Chú ý rằng ở đoạn code thứ hai, vòng `else` sẽ gắn liền với vòng if 1 == 2, **không liên quan tới vòng if đầu tiên** do đó sẽ in ra hello world. Còn ở đoạn code thứ nhất khi dùng `elif` sẽ nối với phần trên if 1==1 nên chỉ in ra hello. Như vậy `elif` nhóm nhiều vòng `if` lại với nhau và `else` thuộc về cả nhóm đó.
 
-## Summary
+## Tóm tắt
 
 - Nếu code bắt đầu với `>>>` thì chạy trực tiếp trên prompt. Còn không thì viết vào file rồi chạy file đó.
 - Đoạn code thụt vào sau if rất quan trọng. Nó sẽ được chạy nếu điều kiện của if là chính xác.
@@ -232,7 +232,7 @@ Chú ý rằng ở đoạn code thứ hai, vòng `else` sẽ gắn liền với 
 - Nếu muốn nhập số từ bàn phím thì phải chuyển kiểu dữ liệu từ String thành dạng số như int, float, double.
 - elif là viết tắt cho else if.
 
-## Exercises
+## Bài tập
 
 1. Chương trình sau có lỗi. Hãy copy vào file và sửa lỗi cho tới khi đoạn code chạy thành công.
 
@@ -275,4 +275,5 @@ Chon mot phep tinh (1-4): 3
 Ket qua la: 2500
 
 Bạn có thể tham khảo về print để làm cho thuận tiện hơn ở [đây](functions.md#print)
+
 Đáp án ở [đây](answers.md#if-else-elif).
