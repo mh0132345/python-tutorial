@@ -15,6 +15,7 @@ Lưu ý Python hiện tại có hai phiên bản thông dụng là Python 2 và 
 
 Hướng dẫn này gồm các phần sau (sẽ update dần).
 Giúp bạn bắt đầu với Python. Sau đó bạn có thể học sâu hơn tùy thích.
+Do IDLE hỗ trợ UNICODE kém quá, không gõ trực tiếp Tiếng Việt vào được, nên các comment Tiếng Việt giải thích trong bài viết ở IDE khác, không phải IDLE. Bạn có thể thử IDE khác đơn giản như Notepad++, còn nếu không thì Tiếng Việt không dấu hay Tiếng Anh cho hợp vậy.
 
 ### Cơ bản
 
@@ -22,5 +23,5 @@ Giúp bạn bắt đầu với Python. Sau đó bạn có thể học sâu hơn 
 2. [Bắt đầu với Python](basics/getting-started.md)
 3. [Các loại biến và so sánh](basics/variables.md)
 4. [Cấu trúc lựa chọn if, else and elif](basics/if.md)
-6. [Sử dụng functions](basics/using-functions.md)
+5. [Sử dụng functions](basics/functions.md)
 
