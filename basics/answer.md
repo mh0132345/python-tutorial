@@ -118,4 +118,48 @@ Hãy chú ý đến khoảng trắng thụt vào đầu dòng! Nếu được h�
     else:
         print("Lua chon khong chinh xac")
     ```
+
+## String 
+
+1. Thay dòng cuối thôi: 
+    ```python
+    print("Ban da nhap {}, {}, {} va {}.".format(word1, word2, word3, word4))
+    print("Ban da nhap %s, %s, %s va %s." % (word1, word2, word3, word4))
+    ```
+
+   Từ bản 3.6 trở lên thì thế này sẽ tiện hơn đây:
+
+    ```python
+    print(f"Ban da nhap {word1}, {word2}, {word3} va {word4}.")
+    ```
+
+2.  We have two problems. Đầu tiên, sửa `message.upper` thành `message.upper()`. Và cho giá trị đó vào biến nào đó: 
+
+    ```python
+    message = input("Noi gi day? ")
+    uppermessage = message.upper()
+    print(uppermessage, "!!!")
+    print(uppermessage, "!!!")
+    print(uppermessage, "!!!")
+    ```
+
+    Hoăc là dùng lại biến message.
+
+    ```python
+    message = input("Noi gi day? ")
+    message = message.upper()
+    print(message, "!!!")
+    print(message, "!!!")
+    print(message, "!!!")
+    ```
     
+    Hoặc đưa về dòng input luôn:
+
+    ```python
+    message = input("Noi gi day? ").upper()
+    print(message, "!!!")
+    print(message, "!!!")
+    print(message, "!!!")
+    ```
+
+
