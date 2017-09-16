@@ -308,5 +308,5 @@ Chạy trong file nhé
     print(message, "!!!")
     ```
 
-Câu trả lời ở [đây](answers.md#String).
+Câu trả lời ở [đây](answers.md#string).
 
