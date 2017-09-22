@@ -26,3 +26,4 @@ Do IDLE hỗ trợ UNICODE kém quá, không gõ trực tiếp Tiếng Việt v�
 5. [Sử dụng functions](basics/functions.md)
 6. [String](basics/string.md)
 7. [Lists và tuples](basics/lists-and-tuples.md)
+8. [Vòng lặp](basics/loops.md)

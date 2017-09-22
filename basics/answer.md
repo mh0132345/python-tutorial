@@ -190,4 +190,51 @@ Hãy chú ý đến khoảng trắng thụt vào đầu dòng! Nếu được h�
     - Như vây namelist chẳng có gì cả. Lý do là chúng ta đã gắn `namelist = namelist.extend('vim')`. Nó nên được sửa chi còn `namelist.extend('vim')`
     - Giờ namelist lại thành  `['john', 'python', 'git', 'gogogo', 'lelouch', 'v', 'i', 'm']`. Đó là do Python xem `'vim'` là một list nên đã thêm mỗi kí tự của từ đó vào `namelist`. Chúng ta có thể dùng `namelist.append('vim')` hoặc `namelist.extend(['vim'])` để giải quyết.
 
+## Loops
 
+1. Vấn đề ở đây là `things` là string vì chúng ta đã biến nó thành string với `str`, nên vòng lặp đã lặp qua toàn bộ kí tự `[`, `1`, `,` và tiếp tục. Thay `str([1, 2, 3, 4, 5])` với `[1, 2, 3, 4, 5]` (bỏ `str` đi).
+
+2. Ở đây `number` chỉ tới một list khác ví dụ như là `[1, 2]`. Do đó ta có thể lặp thêm một lần nữa cho list ở trong:
+
+    ```python
+    ban_dau = [[1, 2], [3, 4], [5, 6]]
+    sau_do = []
+    for sublist in ban_dau:
+        for number in sublist:
+            sau_do.append(number)
+    print(sau_do)
+    ```
+
+    List cũng có extend method:
+
+    ```python
+    ban_dau = [[1, 2], [3, 4], [5, 6]]
+    sau_do = []
+    for sublist in before:
+        sau_do.extend(sublist)
+    print(sau_do)
+    ```
+
+3. - Dòng đầu tiên là cho dữ liệu vào `input`. Vấn đề là toàn bộ chương trình sau đó không thể dùng `input` để nhập dữ liệu đươc. Dù không ảnh hưởng tới bài này nhiều nhưng nên chuyển tên khác ví dụ như `inputlist`.
+
+   - Phần thứ hai là ở vòng `for`. Câu lệnh `numbers = []` chạy ba lần. Mỗi lần một vòng lặp bắt đầu là nó lại chạy. Do đó, cần phải sửa thành chạy một lần đầu trước khi lặp:
+
+    ```python
+    numbers = []
+    for string in inputlist:
+        numbers.append(int(string))
+    ```
+
+   - Phần thứ 3 là `result + n` đã vứt luôn giá trị đi không lưu lại. Nên sửa lại thành `result += n`.
+
+4. Nếu chạy chương trình bạn sẽ nhận ra chẳng có gì xảy ra với numbers list. Đó là vì `number` chỉ làm việc một chiều. Nó nhận dữ liệu từ `numbers` list, nhưng thay đổi nó thì không thay đổi `numbers` list, và chẳng được gì cả.
+
+    Một cách đơn giản là tạo ra thêm một list mới để lấy kết quả và in ra:
+
+    ```python
+    numbers = ['1', '2', '3']
+    converted_numbers = []
+    for number in numbers:
+        converted_numbers.append(int(number))
+    print(converted_numbers)
+    ```
