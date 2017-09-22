@@ -162,4 +162,32 @@ Hãy chú ý đến khoảng trắng thụt vào đầu dòng! Nếu được h�
     print(message, "!!!")
     ```
 
+## Lists
+
+1.  Hãy cẩn thận. `namelist` được tạo bởi `()` thay vì `[]`, nên nó đã thành tuple, không phải list. Bạn không muốn người ta nhìn code và ngạc nhiên nhìn bạn đâu. Thay `()` với `[]` và code sẽ chạy.
+
+2. Hai array được in ra giống hệt nhau! Lý do là dòng code `b = a`. Chỉ việc tạo copy thay vì gắn cho b và a chung bộ nhớ như thế này thôi. Hãy đổi dòng đó thành `b = a.copy()` và kết quả in ra sẽ bình thường. 
+
+3. Tiếp tục là lỗi lạ:
+
+        Nhap ten cua ban: vim
+	Traceback (most recent call last):
+	  File "test.py", line 3, in <module>
+    	if input("Nhap ten cua ban: ") in namelist:
+	TypeError: argument of type 'NoneType' is not iterable
+
+
+    Sửa chương trình để xem thử namelist có gì: 
+    `namelist` seems to be None. 
+	
+    ```python
+    namelist = ['john', 'python', 'git', 'gogogo', 'lelouch']
+    namelist = namelist.extend('vim')
+    print(namelist)
+    ```
+
+    Kết quả là None. 
+    - Như vây namelist chẳng có gì cả. Lý do là chúng ta đã gắn `namelist = namelist.extend('vim')`. Nó nên được sửa chi còn `namelist.extend('vim')`
+    - Giờ namelist lại thành  `['john', 'python', 'git', 'gogogo', 'lelouch', 'v', 'i', 'm']`. Đó là do Python xem `'vim'` là một list nên đã thêm mỗi kí tự của từ đó vào `namelist`. Chúng ta có thể dùng `namelist.append('vim')` hoặc `namelist.extend(['vim'])` để giải quyết.
+
 

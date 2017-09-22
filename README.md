@@ -25,3 +25,4 @@ Do IDLE hỗ trợ UNICODE kém quá, không gõ trực tiếp Tiếng Việt v�
 4. [Cấu trúc lựa chọn if, else and elif](basics/if.md)
 5. [Sử dụng functions](basics/functions.md)
 6. [String](basics/string.md)
+7. [Lists và tuples](basics/lists-and-tuples.md)
